@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Diabetes Prediction</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+	<h2 >Diabetes Prediction</h2>
+	<div class="form">
+
+		<form action="{{ url_for('y_predict')}}"method="post">
+
+		<center><table width=500px>
+     <tr><td>Pregnancies :</td>
+     <td width="500"><input type="text" name="pre" placeholder="Enter between(0-17)" required="required"></input></td></tr>
+     <tr ><td height="7"></td></tr>
+
+     <tr><td>Glucose</td>
+     <td><input type="text" name="glu" placeholder="Enter upto (200)" required="required"></input></td></tr>
+     <tr ><td height="7"></td></tr>
+
+     <tr><td>BloodPressure</td>
+     <td><input type="text" name="bp" placeholder="Enter upto (120)" required="required"></input></td></tr>
+     <tr ><td height="7"></td></tr>
+
+      <tr><td>SkinThickness</td>
+     <td><input type="text" name="ski" placeholder="Enter upto(50)" required="required"></input></td></tr>
+     <tr ><td height="7"></td></tr>
+
+       <tr><td>Insulin</td>
+     <td><input type="text" name="ins" placeholder="Enter upto(500)" required="required"></input></td></tr>
+    <tr ><td height="7"></td></tr>
+
+     <tr><td>BMI</td>
+     <td><input type="text" name="bmi" placeholder="Enter upto(65)" required="required"></input></td></tr>
+     <tr ><td height="7"></td></tr>
+
+       <tr><td>DiabPedigreefun</td>
+     <td><input type="text" name="dpf" placeholder="Enter between(0.05-2.5)" required="required"></input></td></tr>
+     <tr ><td height="7"></td></tr>
+
+       <tr><td>Age</td>
+     <td><input type="text" name="age" required="required"></input></td></tr>
+     <tr ><td height="7"></td></tr>
+
+        <tr></tr>
+    <td><input type="submit" value="Submit"></td></tr>
+        </table>
+
+   </center>
+		</form>
+   <br>
+   <h2 style="color:indigo; font-style:italic;">{{ prediction_text }} </h2>
+	</div>
+
+</body>
+</html>
