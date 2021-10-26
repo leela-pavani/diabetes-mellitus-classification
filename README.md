@@ -36,8 +36,8 @@ Correlation map of cleaned data looks as below
 * StandardScaler is applied to scale the data
 
 # Model Building
-Logistic Regression, KNN, Naive Bayes, support vector, Decision tree, Random Forest, XGBoost classification models are all built on the dataset.
-On comparing the performances of all the models, it's concluded that Random Forest Classification performs well with the problem.
+* Logistic Regression, KNN, Naive Bayes, support vector, Decision tree, Random Forest, XGBoost classification models are all built on the dataset.
+* On comparing the performances of all the models, it's concluded that Random Forest Classification performs well with the problem.
 
 ![](/images/comparison.PNG)
 
